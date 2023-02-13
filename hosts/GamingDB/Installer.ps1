@@ -5,5 +5,8 @@ Read-Host "|| Press enter to continue... ||"
 Unblock-File .\Winget.ps1
 Unblock-File .\Other.ps1
 
+Write-Output "|| Activation ||"
+irm https://massgrave.dev/get | iex
+
 .\Winget.ps1
 .\Other.ps1
