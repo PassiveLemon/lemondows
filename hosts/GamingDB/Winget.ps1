@@ -9,6 +9,7 @@ $programs = @(
   "Valve.steam",
   "RiotGames.Valorant.NA",
   "HeroicGamesLauncher.HeroicGamesLauncher",
+  "Blizzard.BattleNet",
   "NexusMods.Vortex"
 )
 ForEach ($program in $programs) {
