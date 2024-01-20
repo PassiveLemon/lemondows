@@ -3,13 +3,14 @@ Write-Output "|| https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4N
 Read-Host "|| Press enter to continue... ||"
 
 $programs = @(
-  "Mozilla.Firefox",
-  "Discord.Discord",
+  "7zip.7zip",
   "File-New-Project.EarTrumpet",
+  "Mozilla.Firefox",
+  "ArmCord.ArmCord",
+  "OBSProject.OBSStudio",
   "Valve.steam",
   "RiotGames.Valorant.NA",
   "HeroicGamesLauncher.HeroicGamesLauncher",
-  "Blizzard.BattleNet",
   "NexusMods.Vortex"
 )
 ForEach ($program in $programs) {

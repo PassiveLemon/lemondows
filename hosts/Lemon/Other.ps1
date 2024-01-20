@@ -1,2 +1,9 @@
-Invoke-WebRequest -Uri https://github.com/Rem0o/FanControl.Releases/blob/master/FanControl.zip?raw=true -Outfile "C:\Users\Lemon\Downloads\FanControl.zip"
-Invoke-WebRequest -useb https://raw.githubusercontent.com/PassiveLemon/scripts/master/SplockTheSpot.ps1 | Invoke-Expression
+$homedl = "C:\Users\${env:username}\Downloads"
+$ProgressPreference = 'SilentlyContinue'
+
+if ( -not ( Test-Path -Path "${homedl}\FanControl.zip" )) {
+  Invoke-WebRequest -Uri https://github.com/Rem0o/FanControl.Releases/blob/master/FanControl.zip?raw=true -Outfile ${homedl}\FanControl.zip -UseBasicParsing
+  Expand-Archive -Path "${homedl}\FanControl.zip" -DestinationPath "${homedl}\FanControl\"
+}
+
+Invoke-Item ${homedl}

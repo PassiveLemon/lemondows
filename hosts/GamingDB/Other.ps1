@@ -6,7 +6,7 @@ if ( -not ( Test-Path -Path "${homedl}\FanControl.zip" )) {
   Expand-Archive -Path "${homedl}\FanControl.zip" -DestinationPath "${homedl}\FanControl\"
 }
 if ( -not ( Test-Path -Path "${homedl}\OculusSetup.exe" )) {
-  Invoke-WebRequest -Uri https://securecdn.oculus.com/binaries/download/?id=3338642543083794 -Outfile ${homedl}\OculusSetup.exe -UseBasicParsing
+  Invoke-WebRequest -Uri https://securecdn.oculus.com/binaries/download/?id=3552425908372122 -Outfile ${homedl}\OculusSetup.exe -UseBasicParsing
 }
 if ( -not ( Test-Path -Path "${homedl}\bloatbox.zip" )) {
   Invoke-WebRequest -Uri https://github.com/builtbybel/bloatbox/releases/download/0.20.0/bloatbox.zip -Outfile ${homedl}\bloatbox.zip -UseBasicParsing
@@ -17,7 +17,7 @@ if ( -not ( Test-Path -Path "${homedl}\WindowsScripts.zip" )) {
   Expand-Archive -Path "${homedl}\WindowsScripts.zip" -DestinationPath "${homedl}\WindowsScripts\"
 }
 if ( -not ( Test-Path -Path "${homedl}\r2modman-setup.exe" )) {
-  Invoke-WebRequest -Uri https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.36/r2modman-Setup-3.1.36.exe -Outfile ${homedl}\r2modman-setup.exe
+  Invoke-WebRequest -Uri https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.46/r2modman-Setup-3.1.46.exe -Outfile ${homedl}\r2modman-setup.exe
 }
 
 Invoke-Item ${homedl}
